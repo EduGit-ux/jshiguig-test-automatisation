@@ -1,12 +1,12 @@
 import com.intuit.karate.junit5.Karate;
 
-class KarateBasicTest {
+public class ActualizarPeronajes {
+
     static {
         System.setProperty("karate.ssl", "true");
     }
     @Karate.Test
     Karate testBasic() {
-        return Karate.run("classpath:karate-test.feature");
+        return Karate.run("classpath:ActualizarPersonaje.feature");
     }
-
 }
